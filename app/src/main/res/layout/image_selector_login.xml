@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:columnWidth="65dp"
+    android:gravity="center"
+    android:horizontalSpacing="6dp"
+    android:listSelector="#00000000"
+    android:numColumns="3"
+    android:scrollbars="none"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="-1dp">
+
+
+    <ImageView
+        android:id="@+id/image_selector_0"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/mask" 
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:id="@+id/image_selector_1"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:src="@drawable/notifyon"
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:id="@+id/image_selector_2"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:src="@drawable/notifyon"
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:id="@+id/image_selector_3"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:src="@drawable/notifyon"
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:id="@+id/image_selector_4"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:src="@drawable/notifyon"
+        android:layout_margin="32dp"/>
+
+    <ImageView
+        android:id="@+id/image_selector_5"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:src="@drawable/notifyon"
+        android:layout_margin="32dp"/>
+
+</GridLayout>
