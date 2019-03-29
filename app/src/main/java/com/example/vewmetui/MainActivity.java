@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private int tabIcon [] = {R.drawable.ic_menu_camera,R.drawable.ic_menu_send};
-    private boolean notLoggedIn = false;// Change this variable to change log in stance
+    private boolean notLoggedIn = true;// Change this variable to change log in stance
 
 
 
