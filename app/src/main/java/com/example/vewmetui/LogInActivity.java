@@ -101,15 +101,24 @@ public class LogInActivity extends AppCompatActivity {
     }
 
 
-    public void finalLogInAction(){
+    public void finalLogInAction(View view){
         Bitmap photo = profilePhoto; // photo is your selected bitmap photo
         String nickName = et_nickname.getText().toString(); // nickName is the user given nickname
 
         // Here Specify What Happen after Join Button is Pressed...
+        boolean notLoggedIn = true;// change to false if log in fails
 
 
 
 
+
+
+        if(notLoggedIn){
+            // If Logged In success full
+            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
 }

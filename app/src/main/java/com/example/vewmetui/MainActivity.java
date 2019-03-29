@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private int tabIcon [] = {R.drawable.ic_menu_camera,R.drawable.ic_menu_send};
-
+    private boolean notLoggedIn = false;// Change this variable to change log in stance
 
 
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity
 
 
         //Check Log In Status
-            checkLogInStatus();
+            checkLogInStatus(notLoggedIn);
         //Check Log In Status
 
 
@@ -102,8 +102,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.action_sign_out) {
-
-
+            signOut();
             return true;
         }
 
@@ -116,19 +115,17 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_post) {
+        /*if (id == R.id.nav_post) {
             // Handle the New Post action
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    private void checkLogInStatus(){
-        boolean notLoggedIn=true; // change this boolean to false if logged in
-
-
+    private void checkLogInStatus(boolean notLoggedIn){
+        // check log in status
         if(notLoggedIn){
             // If Not Logged In
             Intent intent = new Intent(getApplicationContext(),LogInActivity.class);
@@ -136,5 +133,15 @@ public class MainActivity extends AppCompatActivity
             finish();
         }
     }
+
+    public void signOut(){
+        // Specify signOut Code
+
+
+    }
+
+
+
+
 
 }
