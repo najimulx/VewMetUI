@@ -8,17 +8,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MessageFragment extends Fragment {
+public class UpslideFragmentA extends Fragment {
 
     View view;
-    public MessageFragment(){
+    public UpslideFragmentA(){
 
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.message_fragment  ,container,false);
+        view = inflater.inflate(R.layout.upslide_fragmenta,container,false);
         return view;
     }
+
+
+
+
 }

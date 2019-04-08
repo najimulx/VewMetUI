@@ -110,7 +110,7 @@ public class LogInActivity extends AppCompatActivity {
 
 
         // Here Specify What Happen after Join Button is Pressed...
-        boolean LoggedIn = false;// change to false if log in fails
+        boolean LoggedIn = true;// change to false if log in fails
 
 
 
